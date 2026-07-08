@@ -1,0 +1,1447 @@
+
+
+#outer-border{
+    display: flex;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 290px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease;
+}
+
+#welcome { /* welcome sign properties  */
+    border: 1px solid black;
+    /* box-shadow: 0 0 0 5px blue; */
+    width: 250px;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(167, 197, 230);
+    border-radius: 20px;
+    opacity: 100%;
+    /* position: absolute; */
+}
+
+
+#center-box{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100%;
+
+
+}
+body { /* Background Properties */
+    background-image: url('https://i.redd.it/msiz8gc4u5b91.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+#topbar {
+    display: flex;
+    background-color: rgba(5, 51, 70, 80%);
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(5, 51, 70, 75%),
+        rgba(4, 17, 22, 60%))
+
+}
+#topbar p{
+ font-size: 15x;
+ /* font-weight: bold; */
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#welcomeheader{
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+    
+}
+/* #topprop{
+    justify-content: space-between;
+} */
+
+#welcomebutton {
+    background-color: white;
+    color: black;
+    margin-top: 75px;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: "inter";
+}
+#welcomebutton:hover{
+    background-color: rgb(116, 108, 108);
+
+}
+
+#closewelcome {
+    background-color: rgb(211, 44, 44);
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-family: cursive;
+    color: white;
+    cursor: pointer;
+    
+}
+.closeX {
+    background-color: rgb(211, 44, 44);
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-family: cursive;
+    color: white;
+    cursor: pointer;    
+}
+
+.fade{
+    opacity: 0;
+}
+
+#allspace{
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+#bottomapps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    position:fixed;
+    bottom:10px;
+    width:100%;
+}
+#allspace p {
+    margin: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: cursive;
+}
+#spactext{
+    visibility: hidden;
+    background-color: rgb(116, 108, 108);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 110%;
+    
+}
+#allspace:hover #spactext{
+    visibility:visible;
+
+}
+#spacewindow {
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 580px;
+    height: 580px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+#space-header {
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 500px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+
+}
+#spaceCanvas {
+    background-color: rgb(8, 8, 31);
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+#notelauncher {
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 110px;
+    height: 120px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+#notebookapp{
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#notebookapp p {
+    margin: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: cursive;
+}
+#notetext{
+    visibility: hidden;
+    background-color: rgb(116, 108, 108);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 110%;
+    
+}
+#notebookapp:hover #notetext{
+    visibility:visible;
+
+}
+
+#note-header {
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 60px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#notesenter {
+    background-color: black;
+    width: 500px;
+    height: 400px;
+    color: white;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    overflow-y: auto;
+    overflow-x: none;
+    outline:none;
+}
+#notebutton{
+    border-radius: 10px;
+    width: 95px;
+    height: 80px;
+    display: flex;
+    background-color: black;
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    transition: opacity 0.5s ease;
+    top: 30px;
+    display: flex;
+
+}
+
+
+#docwindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+#doc-header {
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#docnewbutton{
+    position: absolute;
+    border: solid 2px black;
+    /* background-color: rgba(177, 166, 166, 1); */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-top: 1px; */
+    margin-top:2px;
+    top: 1px;
+    right: 3px;
+    margin-right: 2px;
+    font-size: 20px;
+
+}
+#savebutton {
+    position: absolute;
+    border: solid 2px black;
+    /* background-color: rgba(177, 166, 166, 1); */
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px; */
+    margin: 2px;
+    top: 5px;
+    left: 3px;
+    color: white;
+    font-family: "inter";
+    font-size: 15px;
+}
+#loadbutton {
+    position: absolute;
+    border: solid 2px black;
+    /* background-color: rgba(177, 166, 166, 1); */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px; */
+    /* margin: 100px; */
+    top: 40px;
+    left: 10px;
+    font-family: "inter";
+}
+.linea{
+    position: absolute;
+    border: none;
+    height: 2px;
+    background-color: white;
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 10px;
+
+}
+
+#loadbuttonb{
+    position: absolute;
+    border: solid 2px black;
+    /* background-color: rgba(177, 166, 166, 1); */
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    /* padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px; */
+    /* margin: 60px; */
+    top: 80px;
+    left: 10px; 
+    font-family: "inter";
+}
+
+#calcapp {
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#calcapp p{
+    margin: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: cursive;
+}
+#calctext{
+    visibility: hidden;
+    background-color: rgb(116, 108, 108);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 110%;
+    
+}
+#calcapp:hover #calctext{
+    visibility:visible;
+
+}
+
+#calc-header{
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 150px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#calcwindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 300px;
+    height: 400px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+} 
+#num-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: rgb(167, 197, 230);
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+
+}
+.op {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 1px black;
+    filter: drop-shadow(4px 4px 6px black);
+    background-color: rgb(6, 37, 70);
+    color: white;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+}
+.nums{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid 1px black;
+    filter: drop-shadow(4px 4px 6px black);
+    background-color: rgb(6, 37, 70);
+    color: white;
+    font-family: Inter, Helvetica, Arial, sans-serif;
+
+}
+
+.display{
+    position: absolute;
+    top: 50px;
+    display:flex;
+    justify-content: flex-end;
+    margin: 20px;
+    overflow-x: auto;
+}
+.display input{
+    text-align: right;
+    flex: 1;
+    width: 200px;
+    height: 70px;
+    background-color: rgb(6, 37, 70);
+    border-radius: 5px;
+    color: white;
+}
+
+#convertwindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 200px;
+    height: 120px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+}
+#convert-header{
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 130px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#convert-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    gap: 10px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    justify-content: start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+    width: 100%;
+ 
+    padding-bottom: 10px;
+    margin-top: 10px;
+
+}
+.convtbtn{
+    background-color: rgb(8, 127, 255);
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+#gameapp{
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#gameapp p{
+    margin: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: cursive;
+}
+#ractext{
+    visibility: hidden;
+    background-color: rgb(116, 108, 108);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 110%;
+    
+}
+#gameapp:hover #ractext{
+    visibility:visible;
+
+}
+
+#gamewindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 650px;
+    height: 550px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+}
+
+#game-header{
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 500px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#raceCanvas {
+    background-color: rgb(76, 179, 92); 
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+#hidCanvas {
+    background-color: rgb(76, 179, 92); 
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+#gameCanvas {
+    position: relative;
+    width: 600px;
+    height: 475px;
+}
+#gameCanvas canvas {
+    position: absolute;
+    top: 50;
+    left: 0;
+}
+#hidCanvas {
+    display: none;
+    z-index: 0;
+}
+
+#raceCanvas {
+    z-index: 1;
+}
+
+#weatherapp{
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#weatherapp p{
+    margin: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: cursive;
+}
+#wthtext{
+    visibility: hidden;
+    background-color: rgb(116, 108, 108);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 110%;
+    
+}
+#weatherapp:hover #wthtext{
+    visibility:visible;
+
+}
+#weatherwindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 350px;
+    height: 380px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+}
+
+#weather-header{
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 200px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#topwth{
+    position: absolute;
+    justify-content: space-around;
+    top: 40px;
+    /* justify-content: center; */
+}
+#locat{
+    position: absolute;
+    top: 70px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 170px;
+    height: 40px;
+    left: 10px;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 10px; 
+}
+#location{
+    /* text-align:center;
+    align-items: center; */
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-family: 'Inter';
+    text-align: left;
+}
+#temperaturea{
+    position: absolute;
+    top: 120px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 110px;
+    height: 150px;
+    left: 10px;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 10px;
+    font-size: 14px;
+}
+#temperaturea p{
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    font-family: 'Inter';
+}
+#currenttemp{
+    font-size: 17px;
+}
+#sun{
+    position: absolute;
+    top: 120px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 115px;
+    height: 65px;
+    left: 130px;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 10px;
+}
+#sun p{
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 13px;
+    font-family: 'Inter';
+}
+#wind{
+    position: absolute;
+    top: 190px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 115px;
+    height: 80px;
+    left: 130px;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 10px; 
+}
+#wind p{
+    margin-top: 6px;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-family: 'Inter';
+}
+#rainstuff{
+    position: absolute;
+    top: 120px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 83px;
+    height: 150px;
+    right: 10px;
+    /* text-align: left; */
+    /* justify-content: center; */
+    border-radius: 10px; 
+}
+#rainstuff p{
+    margin-top: 6px;
+    margin-bottom: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 13px;
+    font-family: 'Inter';
+}
+#rainstuff #perceptprobtmr{
+    font-size: 11px;
+}
+#rainstuff #rainsum{
+    font-size: 11px;
+
+}
+#forecast{
+    position: absolute;
+    bottom: 7px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 325px;
+    height: 93px;
+    right: 10px;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+#forecast p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 13px;
+    font-family: 'Inter';
+}
+.weatherIcon{
+    width: 32px;
+    height: 32px;
+}
+.epicweather{
+    width: 10px;
+    height: 10px;
+}
+
+#misc{
+    position: absolute;
+    top: 70px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 150px;
+    height: 40px;
+    right: 10px;
+    /* text-align: center;
+    justify-content: center; */
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 2px;    */
+}
+#misc p{
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-size: 13px;
+    font-family: 'Inter';
+
+}
+.currentWeatherIcon{
+    width:40px;
+    height: 40px;
+}
+
+#settingsapp{
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#settext{
+    visibility: hidden;
+    background-color: rgb(116, 108, 108);
+    color: white;
+    text-align: center;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    
+    position: absolute;
+    bottom: 110%;
+    
+}
+#settingsapp:hover #settext{
+    visibility:visible;
+
+}
+#settingswindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 170px;
+    height: 120px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+}
+#settingsapp p{
+    margin: 0;
+    margin-top: 0px;
+    font-size: 14px;
+    font-family: cursive;
+}
+#settings-header{
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 80px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+#menu{
+    display: flex;
+    border-radius: 10px;
+    width: 150px;
+    height:70px;
+    background-color: rgba(230, 221, 221, 100%);
+    /* background-color: rgba(230, 221, 221, 50%); */
+    /* padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+    bottom: 10px;
+
+}
+#wallpaperselect{
+    position: absolute;
+    background-color: rgba(230, 221, 221, 0%);
+    /* background-color: white;
+    border: none;
+    border-radius:15px;
+    font-size: 15px; */
+    border:none;
+
+    margin-top:13px;
+    top: 1px;
+    right: 3px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+#walltext{
+    position: absolute;
+    text-align: left;
+    /* width: 90px;
+    height: auto; */
+    margin-top:2px;
+    top: 1px;
+    left: 2px;
+    margin-left: 2px;
+    font-family: "inter";
+}
+#subwall{
+    display: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 150px;
+    background-color: rgba(230, 221, 221, 100%);
+    /* background-color: rgba(230, 221, 221, 50%); */
+    /* padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px; */
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+    bottom: 10px;
+    left: 110%;
+    bottom: 25%;
+
+}
+#backwall{
+    position:absolute;
+    margin-top:3px;
+    top: 3px;
+    left: 2px;
+    margin-left: 2px;
+    font-family: "inter";
+
+}
+#option1{
+    position:absolute;
+    /* margin-bottom:10px; */
+    bottom: 90px;
+    left: 2px;
+    margin-left: 2px;
+    font-family: "inter";
+    border: none;
+    background-color: rgb(76, 146, 220);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-top:2px;
+}
+#option2{
+    position:absolute;
+    /* margin-bottom:10px; */
+    bottom: 55px;
+    left: 2px;
+    margin-left: 2px;
+    font-family: "inter";
+    border: none;
+    background-color: rgb(76, 146, 220);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-top:2px;
+}
+#option3{
+    position:absolute;
+    /* margin-bottom:10px; */
+    bottom: 20px;
+    left: 2px;
+    margin-left: 2px;
+    font-family: "inter";
+    border: none;
+    background-color: rgb(76, 146, 220);
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-top:2px;
+}
+/* #wallpaper button p{
+    position: absolute;
+    margin-top:0px;
+} */
+#aiapp{
+    position: relative;    
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(31, 31, 98, 0.8);
+    color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    left: 10px;
+    top: 100px;
+}
+#aiwindow{
+    display: none;
+    border: 2px ridge gray;
+    border-radius: 25px;
+    width: 170px;
+    height: 120px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(177, 166, 166, 0.4),
+        rgba(84, 81, 81, 0.75)
+
+    );
+    /* background-color: rgba(230, 221, 221, 50%); */
+    padding-top: 60px; 
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    /* position: absolute; */
+    text-align: center;
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;    
+    box-sizing: border-box;
+}
+#ai-header{
+    text-align: center;
+    position: absolute;
+    align-content: center;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* left: 0;
+    right: 0; */
+    color: white;
+    background-color: black;
+    width: 80px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: grab;
+    font-size: 10px;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+
+/* #sun{
+    position: absolute;
+    top: 80px;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(0, 144, 254, 1),
+        rgba(148, 185, 213, 1)
+
+    );
+    width: 150px;
+    height: 50px;
+    left: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 14px;
+} */
+
+
+
+
+#loadbutton:hover{
+    background-color: rgb(83, 82, 82);
+}
+#docnewbutton:hover{
+    background-color: rgb(83, 82, 82);
+}
+#savebutton:hover{
+    background-color: rgb(83, 82, 82);
+}
+#loadbuttonb:hover{
+    background-color: rgb(83, 82, 82);
+}
